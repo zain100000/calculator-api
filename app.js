@@ -21,11 +21,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.send("Success");
-  res.end()
-});
-
 app.use("/api", calculatorRoutes);
 
 const PORT = 5000;
